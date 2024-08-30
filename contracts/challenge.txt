@@ -1,0 +1,38 @@
+Challenge: Voting Smart Contract
+Objective: Create a basic voting system where users can vote on a list of candidates.
+
+Requirements:
+Candidate Registration:
+
+The contract should allow the owner to register candidates.
+Each candidate should have a unique ID and a name.
+Voting Process:
+
+Each voter should be able to vote only once.
+Voters can select a candidate by their ID.
+Vote Counting:
+
+The contract should keep track of the number of votes each candidate has received.
+Implement a function to retrieve the current leading candidate.
+Security:
+
+Ensure only registered voters can vote.
+Make sure the same voter cannot vote multiple times.
+Functions to Implement:
+
+registerCandidate(uint candidateId, string memory candidateName)
+vote(uint candidateId)
+getVotes(uint candidateId) view returns (uint)
+getLeadingCandidate() view returns (uint candidateId, string memory candidateName)
+Bonus (Optional):
+Add a function to close the voting process and announce the final winner.
+Implement events to log when a vote is cast and when a candidate is registered.
+Tools:
+Language: Solidity
+Framework: Remix IDE or Hardhat
+Steps to Get Started:
+Define the contract and necessary variables (e.g., mapping for candidates and votes).
+Implement the functions as per the requirements.
+Test the contract on a local blockchain or a testnet.
+Ensure to handle edge cases like invalid candidate IDs or multiple voting attempts.
+This challenge should be manageable within an hour and will help you practice fundamental Solidity concepts, such as mappings, access control, and basic voting logic.
