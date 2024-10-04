@@ -39,7 +39,7 @@ contract SaveERC20 {
 
     function withdraw(uint256 _amount) external {
         require(msg.sender != address(0), "zero addres detected");
-        require(_amount > 0, "can't deposit zero");
+        require(_amount > 0, "can't withdraw zero");
 
         uint256 _userBalance = balances[msg.sender];
 
